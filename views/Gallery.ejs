@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+
+<div class="container">
+
+    <div class="row my-5">
+
+        <% for(let user of users){  %>
+
+        <div class="col-6 col-md-4">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= user.name %> </h5>
+
+                    <p class="card-text"><%= user.location %> </p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <% } %>
+    </div>
+</div>
+<%- include('partials/footer') %>
